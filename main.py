@@ -4,6 +4,9 @@ import time
 import pyrebase
 import serial
 
+#https://www.youtube.com/watch?v=bY_F1hthAZ8&t=257s 참고
+#https://www.youtube.com/watch?v=_FNfRtXEbr4 참고
+
 #main control
 # 사용자 위치와 관찰자 위치가 반대여서
 # 관찰자 위치의 코드 입니다. 관찰자가 왼쪽으로 돌리면 사용자 입장에서는 오른쪽으로 가게 됩니다.
