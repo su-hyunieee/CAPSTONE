@@ -44,13 +44,13 @@ while True :
             class_id = np.argmax(scores)
             confidence = scores[class_id]
             if confidence > 0.2:
-                # Object detected
+                #  detected
                 center_x = int(detection[0] * width)
                 center_y = int(detection[1] * height)
                 w = int(detection[2] * width)
                 h = int(detection[3] * height)
 
-                # Rectangle coordinates
+                # rectangle
                 x = int(center_x - w / 2)
                 y = int(center_y - h / 2)
 
