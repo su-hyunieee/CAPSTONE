@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import time
 
-# Load Model
+# load model
 net = cv2.dnn.readNet("/home/pi/Desktop/yolov3_custom2_last.weights", "/home/pi/Desktop/yolov3_custom2.cfg")
 classes = []
 with open("/home/pi/Desktop/coco.names", "r") as f:
@@ -34,7 +34,7 @@ while True :
     outs = net.forward(output_layers)
     
     
-    # result
+    
     class_ids = []
     confidences = []
     boxes = []
