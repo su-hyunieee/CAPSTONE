@@ -33,8 +33,6 @@ while True :
     net.setInput(blob)
     outs = net.forward(output_layers)
     
-    
-    
     class_ids = []
     confidences = []
     boxes = []
@@ -60,7 +58,6 @@ while True :
     
     indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
     
-
     for i in range(len(boxes)):
         if i in indexes:
             x, y, w, h = boxes[i]
